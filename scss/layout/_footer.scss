@@ -1,0 +1,132 @@
+footer{
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+   }
+   .footer-position{
+      display: flex;
+      align-items: center;
+   }
+   .footer{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .address-position{
+      margin-top: 20px;
+  }
+.address{
+   &__item{
+    margin-top: 9px;
+   }
+   &__contact{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__oficce{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+}
+
+  .studio1{
+      color: #fff;
+      margin-bottom: 20px;
+  }
+  .social{
+      margin-left: 70px;
+      height: 80px;
+      width: 206px;
+  
+    &__list{
+      display: flex;
+  }
+    &__text{
+      margin-bottom: 20px;
+      font-family: $font-family;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #fff;
+  }
+}
+  .footer-circle{
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.1);
+     width: 44px;
+     height: 44px;
+     margin-right: 10px;
+     transition-property: background-color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+      background-color: #2196F3;
+  }
+}
+  .icon-footer{
+     padding: 12px;
+     fill: #FFFFFF;
+     width: 44px;
+     height: 44px;
+  }
+
+
+  .subscribe{
+     width: 570px;
+     height: 86px;
+     margin-left: 93px;
+  
+    &__title{
+      margin-bottom: 20px;
+      font-family: $font-family;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #fff;
+  }
+   &__position{
+      position: relative;
+  }
+    &__input{
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     border-radius: 4px;
+     width: 358px;
+     height: 50px;
+     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+     background: rgba(33, 150, 243, 0);
+     padding-left: 15px;
+  }
+   &__button{
+      border-radius: 4px;
+      width: 200px;
+      height: 50px; 
+      padding-left: 28px;
+      padding-right: 62px;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+      background: #2196f3;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 187%;
+      letter-spacing: 0.06em;
+      color: #fff;
+  }
+}
+
+  .icon-send{
+      position: absolute;
+      top: 13px;
+      right: 40px;
+      fill: #fff;
+  }
