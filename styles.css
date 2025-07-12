@@ -18,17 +18,6 @@
     padding-left: 15px;
     padding-right: 15px;
 } */
-
-.work , .special , .effecity , .special{
-    margin-bottom: 94px;
-}
-.work-list , .team-list , .special-list{
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    column-gap: 20px;
-    column-gap: 30px;
-}
 /* header */
 /* header{
     padding-top: 24px;

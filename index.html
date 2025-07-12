@@ -61,82 +61,82 @@
     <!-- Замовлення послуг  -->
     <main>
       <section class="effecity">
-        <div class="container effecity-position">
-          <h1 class="effecity-title">Ефективне рішення для вашого бізнесу</h1>
+        <div class="container effecity__position">
+          <h1 class="effecity__title">Ефективне рішення для вашого бізнесу</h1>
           <button class="order" data-modal-open>Замовити послугу</button>
         </div>
           <!-- Модальне вікно -->
           <div class="backdrop is-hidden" data-backdrop>
             <div class="modal">
-              <h2 class="modal-title">
+              <h2 class="modal__title">
                 Залиште свої дані, ми вам передзвонимо
               </h2>
-              <div class="close-circle">
-              <svg class="icon-cross"  width="18px" height="18px" data-modal-close>
+              <div class="modal__close">
+              <svg class="modal__cross"  width="18px" height="18px" data-modal-close>
                 <use href="./icons/symboldefs.svg#icon-cross"></use>
               </svg>
             </div>
               <form action="" class="form">
-                <label for="" class="modal-label"> Ім'я
-                  <input type="text" class="modal-input">
-                  <svg class="icon-modal" width="18px" height="18px">
+                <label for="" class="form__label"> Ім'я
+                  <input type="text" class="form__input">
+                  <svg class="form__icon" width="18px" height="18px">
                     <use href="./icons/symboldefs.svg#icon-person"></use>
                   </svg>
                 </label>
-                <label for="" class="modal-label"> Телефон
-                  <input type="tel" class="modal-input">
-                  <svg class="icon-modal" width="18px" height="18px">
+                <label for="" class="form__label"> Телефон
+                  <input type="tel" class="form__input">
+                  <svg class="form__icon" width="18px" height="18px">
                     <use href="./icons/symboldefs.svg#icon-phone"></use>
                   </svg>
                 </label>
-                <label for="" class="modal-label"> Пошта
-                  <input type="email" class="modal-input">
-                  <svg class="icon-modal" width="18px" height="18px">
+                <label for="" class="form__label"> Пошта
+                  <input type="email" class="form__input">
+                  <svg class="form__icon" width="18px" height="18px">
                     <use href="./icons/symboldefs.svg#icon-email"></use>
                   </svg>
                 </label>
-                <label for="" class="modal-label"> Коментар
-                  <textarea name="" id="" placeholder="Введіть текст" class="modal-comment"></textarea>
+                <label for="" class="form__label"> Коментар
+                  <textarea name="" id="" placeholder="Введіть текст" class="form__comment"></textarea>
                 </label>
-                <div class="access-position">
-                <label for="" class="access-label">
-                  <input type="checkbox" width="16px" height="15px" class="access-checkbox" >
+                <div class="access">
+                <label for="" class="access__label">
+                  <input type="checkbox" width="16px" height="15px" class="access__checkbox" >
                 </label>
-                <span class="access-text">Погоджуюся з розсилкою та приймаю</span>
-                <a href="#" class="access-link">Умови договору</a>
+                <span class="access__text">Погоджуюся з розсилкою та приймаю</span>
+                <a href="#" class="access__link">Умови договору</a>
               </div>
               </form>
               <button type="button" data-modal-close class="button-send">Відправити</button>
             </div>
           </div>
       </section>
-      <section class="special">
+      <section class="skills">
         <div class="container">
           <!-- Особливості компанії -->
-          <ul class="special-list">
-            <li class="special-list-item">
-              <h3 class="special-quality">Увага до деталей</h3>
-              <p class="special-text">
+          <ul class="special">
+            <li class="special__item">
+              <h3 class="special__quality">Увага до деталей</h3>
+              <p class="special__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позицій.
               </p>
             </li>
-            <li class="special-list-item">
-              <h3 class="special-quality">Пунктуальність</h3>
-              <p class="special-text">
+            <li class="special__item">
+              <h3 class="special__quality">Пунктуальність</h3>
+              <p class="special__text">
                 Завдання організацій, особливо рамки і місце навчяння кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="special-list-item">
-              <h3 class="special-quality">Планування</h3>
-              <p class="special-text">
+            <li class="special__item">
+              <h3 class="special__quality">Планування</h3>
+              <p class="special__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="special-list-item">
-              <h3 class="special-quality">Сучастні технології</h3>
-              <p class="special-text">
+            <li class="special__item">
+              <h3 class="special__quality">Сучастні технології</h3>
+              <p class="special__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань
               </p>
@@ -147,15 +147,15 @@
       <section class="work">
         <div class="container">
           <h2 class="work-title">Чим ми займаємось</h2>
-          <ul class="work-list">
-            <li class="work-list-itme">
+          <ul class="picture">
+            <li class="picture__item">
               <img
                 src="./images/Computer.jpg"
                 alt="Вид на програміста який програмує"
                 width="370"
-                class="work-img"
+                class="picture-img"
               />
-              <p class="work-text1">Десктопні додатки</p>
+              <p class="picture__text--1">Десктопні додатки</p>
             </li>
             <li class="work-list-itme">
               <img
@@ -164,7 +164,7 @@
                 width="370"
                 class="work-img"
               />
-              <p class="work-text2">Мобільні додатки</p>
+              <p class="picture__text--2">Мобільні додатки</p>
             </li>
             <li class="work-list-itme">
               <img
@@ -173,7 +173,7 @@
                 width="370"
                 class="work-img"
               />
-              <p class="work-text3">Дизайнерські рішення</p>
+              <p class="picture__text--3">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -181,43 +181,43 @@
       <!-- Про команду -->
       <section class="team">
         <div class="container">
-          <h2 class="team-title">Наша команда</h2>
-          <ul class="team-list">
-            <li class="team-list-item">
-              <article class="team-list-article">
+          <h2 class="team__title">Наша команда</h2>
+          <ul class="developers">
+            <li class="developers__item">
+              <article class="developers__article">
                 <img
                   src="./images/Igor.jpg"
                   alt="на зображенні зображен працівник Ігор Дем'яненко"
                   width="270"
-                  class="team-list-img"
+                  class="developers__img"
                 />
-                <h3 class="team-list-title">Ігор Дем'яненко</h3>
-                <p class="team-list-text">Product Designer</p>
-                <ul class="team-social-list">
-                  <li class="team-social">
+                <h3 class="developers__title">Ігор Дем'яненко</h3>
+                <p class="developers__text">Product Designer</p>
+                <ul class="social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -225,41 +225,41 @@
                 </ul>
               </article>
             </li>
-            <li class="team-list-item">
-              <article class="team-list-article">
+            <li class="developers__item">
+              <article class="developers__article">
                 <img
                   src="./images/Olga.jpg"
                   alt="На зображенні зображен працівник Ольга Рєпіна"
                   width="270"
-                  class="team-list-img"
+                  class="developers__img"
                 />
-                <h3 class="team-list-title">Ольга Рєпіна</h3>
-                <p class="team-list-text">Frontend Developer</p>
-                <ul class="team-social-list">
-                  <li class="team-social">
+                <h3 class="developers__title">Ольга Рєпіна</h3>
+                <p class="developers__text">Frontend Developer</p>
+                <ul class="social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -267,41 +267,41 @@
                 </ul>
               </article>
             </li>
-            <li class="team-list-item">
-              <article class="team-list-article">
+            <li class="developers__item">
+              <article class="developers__article">
                 <img
                   src="./images/Mikola.jpg"
                   alt="На зображенні зображен працівник Микола Тарасов"
                   width="270"
-                  class="team-list-img"
+                  class="developers__img"
                 />
-                <h3 class="team-list-title">Микола Тарасов</h3>
-                <p class="team-list-text">Marketing</p>
-                <ul class="team-social-list">
-                  <li class="team-social">
+                <h3 class="developers__title">Микола Тарасов</h3>
+                <p class="developers__text">Marketing</p>
+                <ul class="social">
+                  <li class="social__item">
                     <a href="#">
                       <svg class="team-icon">
                         <use href="./icons/symboldefs.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -309,41 +309,41 @@
                 </ul>
               </article>
             </li>
-            <li class="team-list-item">
-              <article class="team-list-article">
+            <li class="developers__item">
+              <article class="developers__article">
                 <img
                   src="./images/Miihailo.jpg"
                   alt="На зображенні зображен працівник Михайло Єрмаков"
                   width="270"
-                  class="team-list-img"
+                  class="developers__img"
                 />
-                <h3 class="team-list-title">Михайло Єрмаков</h3>
-                <p class="team-list-text">UI Designer</p>
-                <ul class="team-social-list">
-                  <li class="team-social">
+                <h3 class="developers__title">Михайло Єрмаков</h3>
+                <p class="developers__text">UI Designer</p>
+                <ul class="social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-social">
+                  <li class="social__item">
                     <a href="#">
-                      <svg class="team-icon">
+                      <svg class="social__icon">
                         <use href="./icons/symboldefs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -357,10 +357,10 @@
       <!-- Costumers -->
       <section class="regular-custumers">
         <div class="container">
-          <h3 class="title-custumers">Постійні клієнти</h3>
-          <ul class="custumers-list">
+          <h3 class="custumers__title">Постійні клієнти</h3>
+          <ul class="custumers">
             <li class="custumers-item">
-              <svg class="icon-custumers">
+              <svg class="custumers__icon">
                 <use href="./icons/symboldefs.svg#icon-yaandco"></use>
               </svg>
             </li>
@@ -421,9 +421,9 @@
             </ul>
           </address>
         </div>
-        <div class="social">
+        <div class="social--footer">
           <h3 class="social__text">приєднуйтесь</h3>
-          <ul class="social__list">
+          <ul class="social__list--footer">
             <li class="footer-circle">
               <a href="#">
                 <svg class="icon-footer">

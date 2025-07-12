@@ -41,15 +41,15 @@ footer{
       color: #fff;
       margin-bottom: 20px;
   }
-  .social{
+  .social--footer{
       margin-left: 70px;
       height: 80px;
       width: 206px;
   
-    &__list{
+    .social__list--footer{
       display: flex;
   }
-    &__text{
+  .social__text{
       margin-bottom: 20px;
       font-family: $font-family;
       font-weight: 700;

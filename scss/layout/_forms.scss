@@ -1,16 +1,4 @@
 /* modal */
-.backdrop{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.2);
- }
- .backdrop.is-hidden{
-    opacity: 0;
-    pointer-events: none;
- }
  .modal{
   position: absolute;
   top: 50%;
@@ -24,8 +12,8 @@
   margin: 0 auto;
   transform: translate(-50%, -50%);
   padding: 40px;
- }
- .modal-title{
+ 
+   &__title{
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 20px;
@@ -33,10 +21,12 @@
     text-align: center;
     color: var(--main-text-color);
  }
- .icon-cross:hover{
+
+
+  &__cross:hover{
     fill: #2196F3;
  }
- .close-circle{
+  &__close{
     position: absolute;
     top: 14px;
     right: 10px;
@@ -47,11 +37,12 @@
     padding-right: 6px;
     border: 1px solid rgba(0, 0, 0, 0.1);
  }
+}
  .form{
    display: flex;
    flex-direction: column;
- }
- .modal-label{
+
+   &__label{
     display: flex;
     position: relative;
     margin-top: 10px;
@@ -63,28 +54,30 @@
     letter-spacing: 0.01em;
     color: #757575;
  }
- .icon-modal{
-    position: absolute;
-    top: 30px;
-    left: 11px;
- }
- .modal-input{
-    height: 40px;
-    padding-left: 42px;
-    border: 2px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- }
- .modal-input:hover{
+   &__input{
+   height: 40px;
+   padding-left: 42px;
+   border: 2px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+   transition-property: border;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+   &:hover{
     border: 2px solid #2196F3
+  }
  }
- .modal-input:hover ~ .icon-modal{
-    fill: #2196F3;
+
+   &__icon{
+   position: absolute;
+   top: 30px;
+   left: 11px;
+ .form__input:hover ~ &{
+   fill: #2196F3;
  }
- 
- .modal-comment{
+}
+  &__comment{
     width: 100%;
     height: 120px;
     padding-top: 12px;
@@ -97,18 +90,19 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
- }
- .access-position{
+     }
+}
+ .access{
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 30px;
- }
- .access-checkbox{
+
+  &__checkbox{
     position: relative;
     top: 3px;
  }
- .access-text{
+  &__text{
     margin-left: 8px;
     font-family: var(--font-family);
     font-weight: 400;
@@ -117,7 +111,7 @@
     letter-spacing: 0.03em;
     color: #757575;
  }
- .access-link{
+  &__link{
     display: flex;
     margin-left: 3px;
     text-decoration: underline;
@@ -128,6 +122,7 @@
     line-height: 171%;
     letter-spacing: 0.03em;
  }
+}
  .button-send{
     width: 200px;
     height: 50px;
