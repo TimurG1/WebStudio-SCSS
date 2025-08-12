@@ -1,28 +1,35 @@
 .effecity{
-   padding-top: 200px;
-   padding-bottom: 200px;
-   background-image: url(../images/overlay.png), url(../images/heros.png);
-   background-repeat: no-repeat;
-   background-position: center;
+  //  padding-top: 200px;
+  //  padding-bottom: 200px;
+  //  background-image: url(../images/overlay.png), url(../images/heros.png);
+  //  background-repeat: no-repeat;
+  //  background-position: center;
 
-  &__position{
+@media screen and (min-width:480px) {
+  background-image: url(../images/overlay.png) ,url(../images/mobileheader.jpg);
+  padding: 130px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+   &__position{
     display: flex;
-   flex-direction: column;
-   align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   &__title{
-   font-weight: 900;
-   font-size: 44px;
-   line-height: 1.36;
-   letter-spacing: 0.06em;
-   text-transform: uppercase;
-   text-align: center;
-   color: #fff; 
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 162%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
   }
-}
-.order{
+
+ .order{
    border-radius: 4px;
-   width: 216px;
+   width: 200px;
    height: 50px;
    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
    background: #2196f3;
@@ -32,31 +39,127 @@
    letter-spacing: 0.06em;
    text-align: center;
    color: #fff;
+ }
+
+@media screen and (min-width:768px) {
+  background-image: url(../images/heros.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__title{
+    padding: 0 180px;
+  }
+
+@media screen and (min-width:1200px){
+   padding-top: 200px;
+   padding-bottom: 200px;
+
+}
+}
 }
 
 .skills{
+  margin-top: 60px;
+  margin-bottom: 60px;
+@media screen and (min-width:1200px){
   margin-top: 94px;
   margin-bottom: 94px;
 }
+}
 .special{
-   @extend %section-settings !optional; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media  screen and (min-width:768px) {
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+
+  &__item{
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  }
+  @media screen and (min-width:1200px){
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
 
  &__item:nth-child(1):before{
-   @extend %special__img !optional;
+   @include special__img();
    background-image: url(../images/antena.png);
+   background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover;
 
+    @media screen and (min-width:768px){
+      @include special__img(354px,);
+    }
+    @media screen and (min-width:1200px){
+      @include special__img(270px,);
+    }
  }
  &__item:nth-child(2):before{
-   @extend %special__img !optional;
+   @include special__img();
    background-image: url(../images/clock.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+    @media screen and (min-width:768px){
+      @include special__img(354px,);
+    }
+    @media screen and (min-width:1200px){
+      @include special__img(270px,);
+    }
   }
  &__item:nth-child(3):before{
-   @extend %special__img !optional;
+   @include special__img();
    background-image: url(../images/graph.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+    @media screen and (min-width:768px){
+      @include special__img(354px,);
+    }
+    @media screen and (min-width:1200px){
+      @include special__img(270px,);
+    }
  }
  &__item:nth-child(4):before{
-   @extend %special__img !optional;
+   @include special__img();
    background-image: url(../images/astronaut.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+    @media screen and (min-width:768px){
+      @include special__img(354px,);
+    }
+    @media screen and (min-width:1200px){
+      @include special__img(270px,);
+    }
+ }
+
+
+ &__quality{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 10px;
+
+  @media screen and (min-width:768px){
+    text-align: start;
+  }
  }
  &__text{
  font-weight: 400;
@@ -64,10 +167,16 @@
  line-height: 1.71;
  letter-spacing: 0.03em;
  color: #757575;
+ margin-bottom: 30px;
  }
 
 }
 .work{
+  display: none; 
+
+@media screen and (min-width:1200px) {
+  display: flex;
+
    margin-bottom: 94px;
 
  &__title{
@@ -103,9 +212,11 @@
    padding-left: 94px;
    padding-right: 94px;
  }
+  }
 }
-
 .team{
+ padding-top: 60px;
+ padding-bottom: 60px;
  background-color: #F5F4FA;
 
 
@@ -117,15 +228,14 @@
   }
 }
 .developers{
-   @extend %section-settings ;
-
    &__item{
    background-color: #FFFFFF;
    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+   margin-bottom: 30px;
  }
   &__img{
-   width: 270px;
-   height: 260px;
+   width: 450px;
+   height: 460px;
    margin-bottom: 30px;
  }
   &__title{
@@ -143,6 +253,32 @@
  color: #757575;
  margin-bottom: 16px;
  }
+
+ @media screen and (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+
+    margin: 0;
+     
+    &__item{
+      flex-basis: calc((100% - 60px ) / 60px);
+    }
+
+    &__img{
+      width: 354px;
+      height: 374px;
+    }
+ }
+
+  @media screen and (min-width:1200px) {
+    flex-wrap: nowrap;
+
+    &__img{
+      width: 270px;
+      height: 260px;
+    }
+  }
 }
 .social{
    display: flex;
@@ -176,8 +312,12 @@
   }
 }
 /* Клієнти */
+.regular-custumers{
+  padding-bottom: 94px;
+}
 .custumers__title{
   margin-top: 94px;
+  margin-bottom: 50px;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
@@ -187,14 +327,20 @@
 }
 .custumers{
    display: flex;
-   justify-content: center;
+   flex-wrap: wrap;
+   column-gap: 30px;
+   row-gap: 30px;
+  
+  &__item{
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  //  justify-content: center;
 
   &__icon{
-  width: 170px;
+  width: 210px;
   height: 92px;
-  margin-top: 50px;
-  margin-left: 30px;
-  margin-bottom: 94px;
+  // margin-left: 30px;
+  
    fill: #AFB1B8;
   border: 1px solid #AFB1B8;
   border-radius: 2px;
@@ -204,6 +350,19 @@
    & :hover{
     fill: #2196f3;
     border: 1px solid #2196f3 ;
+  }
+ }
+
+ @media screen and (min-width:768px) {
+  &__icon{
+    width: 226px;
+  }
+}
+ @media screen and (min-width:1200px) {
+  flex-wrap: nowrap;
+
+  &__icon{
+    width: 170px;
   }
  }
 }

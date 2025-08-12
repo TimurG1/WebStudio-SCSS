@@ -1,30 +1,42 @@
 header{
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width:1200px){
     padding-top: 24px;
     padding-bottom: 24px;
+   }
 }
-  .header-position{
+.header-position{
     display: flex;
     align-items: center;
-
 }
 .logo{
-    font-size: 26px;
+    font-size: 24px;
     letter-spacing: 0.03em;
     color: #2196f3;
+
+@media screen and (min-width:1200px){
+    font-size: 26px;
+}
 }
 .studio{
     color: #000;
 }
 .navigation{
-    margin-left: 93px;
+    display: none;
+
+@media screen and (min-width: 768px){
     display: flex;
+    margin-left: 90px;
+    margin-right: 90px;
     flex-direction: row;
     column-gap: 50px;
-
-   &__item{
+    
+    &__item{
     position: relative;
-   }
-
+   } 
+   
    &__link{
   font-weight: 500;
   font-size: 14px;
@@ -33,8 +45,8 @@ header{
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-   &:hover::after{
+
+      &:hover::after{
   content: '';
   display: block;
   position: absolute;
@@ -44,18 +56,24 @@ header{
   background-color: #2196f3;
   top: 44px;
    }
-   &:hover{
-    color: #2196f3;
+    &:hover{
+     color: #2196f3;
   }
- }
+
+}
+}
+@media screen and (min-width: 1200px){
+        margin-left: 93px;
+        margin-right: 315px;
+}
 }
 .contact{
-    display: flex;
-    flex-direction: row;
-    column-gap: 30px;
-    margin-left: 318px;
+    display: none;
 
-    &__email, &__tel {
+    @media screen and (min-width:768px){     
+        display: flex;
+        flex-direction: column;
+        &__email, &__tel {
         font-weight: 500;
         font-size: 14px;
         letter-spacing: 0.02em;
@@ -64,7 +82,12 @@ header{
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
      }
-
+}
+@media screen and (min-width:1200px){
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px
+}
 }
 .contact:hover{
     color: #2196f3;
@@ -89,4 +112,11 @@ header{
 }
 .contact__email:hover, .contact__tel:hover{
     color: #2196f3;
+}
+.header__burger{
+    margin-left: 276px;
+@media screen and (min-width:768px){
+    display: none;
+}
+
 }

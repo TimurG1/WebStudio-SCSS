@@ -1,0 +1,7 @@
+@mixin special__img($width:450px, $height:120px){
+    content: '';
+    display: block;
+    margin-bottom: 30px;
+    width: $width;
+    height: $height;
+}
