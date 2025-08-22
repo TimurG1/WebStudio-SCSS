@@ -5,13 +5,18 @@
   left: 50%;
   
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #FFFFFF;
   
   margin: 0 auto;
   transform: translate(-50%, -50%);
   padding: 40px;
+
+  @media screen and (min-width:1200px) {
+   width: 528px;
+   height: 581px;
+  }
  
    &__title{
     font-family: var(--font-family);
@@ -106,10 +111,14 @@
     margin-left: 8px;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 171%;
     letter-spacing: 0.03em;
     color: #757575;
+
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
+  }
  }
   &__link{
     display: flex;
@@ -118,17 +127,23 @@
     color: #2196f3;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 171%;
     letter-spacing: 0.03em;
+
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
+  }
  }
 }
  .button-send{
     width: 200px;
     height: 50px;
     padding: 10px 52px;
-    margin-left: 123px;
-    margin-right: 123px;
+    // margin-left: 112px;
+    // margin-right: 112px;
+    margin-left: 85px;
+    margin-right: 85px;
  
     font-family: var(--font-family);
     font-weight: 700;
@@ -140,4 +155,9 @@
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
     background-color: #188ce8;
+
+  @media screen and (min-width:1200px) {
+  margin-left: 123px;
+  margin-right: 123px;
+  }
  }

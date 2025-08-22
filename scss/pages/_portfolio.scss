@@ -1,16 +1,17 @@
 .filter{
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     column-gap: 8px;
-  
-  &__button {
+
+    &__button {
     font-weight: 500;
     font-size: 16px;
     line-height: 162%;
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
-    margin-top: 94px;
+    margin-top: 60px;
+    // margin-top: 94px;
     margin-bottom: 34px;
     padding: 6px 25px;
     border: 1px;
@@ -29,16 +30,32 @@
  .card{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
     row-gap: 30px;
+    margin-bottom: 60px;
+
+  @media screen and (min-width:768px) {
+    column-gap: 30px;
+  }
+  @media screen and (min-width:1200px) {
+    column-gap: 30px;
     margin-bottom: 94px;
+  }
+
 
     &__item:hover {
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
       0 1px 1px 0 rgba(0, 0, 0, 0.12);
   }
     &__article {
+     flex-basis: calc(100% - 30px);
+
+      @media screen and (min-width:768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+      @media screen and (min-width:1200px) {
     flex-basis: calc((100% - 2 * 30px) / 3);
+  }
+
   }
 
     &__title {
