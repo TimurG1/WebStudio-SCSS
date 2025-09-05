@@ -42,20 +42,19 @@
   }
 
 
-    &__item:hover {
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
-      0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  }
-    &__article {
-     flex-basis: calc(100% - 30px);
-
-      @media screen and (min-width:768px) {
-    flex-basis: calc((100% - 2 * 30px) / 2);
+    &__item {
+                 @media screen and (min-width:768px) {
+    flex-basis: calc((100% -  30px) / 2);
   }
       @media screen and (min-width:1200px) {
     flex-basis: calc((100% - 2 * 30px) / 3);
+
   }
 
+  }
+    &__item:hover {
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+      0 1px 1px 0 rgba(0, 0, 0, 0.12);
   }
 
     &__title {

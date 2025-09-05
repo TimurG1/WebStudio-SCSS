@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -56,7 +56,13 @@
             >
           </li>
         </ul>
-        <svg class="header__burger" width="44" height="44">
+        <svg
+          class="menu-toggle js-open-menu header__burger"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          width="44"
+          height="44"
+        >
           <use href="./icons/symboldefs.svg#icon-burger"></use>
         </svg>
       </div>
@@ -68,50 +74,71 @@
           <h1 class="effecity__title">Ефективне рішення для вашого бізнесу</h1>
           <button class="order" data-modal-open>Замовити послугу</button>
         </div>
-          <!-- Модальне вікно -->
-          <div class="backdrop is-hidden" data-backdrop>
-            <div class="modal">
-              <h2 class="modal__title">
-                Залиште свої дані, ми вам передзвонимо
-              </h2>
-              <div class="modal__close">
-              <svg class="modal__cross"  width="18px" height="18px" data-modal-close>
+        <!-- Модальне вікно -->
+        <div class="backdrop is-hidden" data-backdrop>
+          <div class="modal">
+            <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+            <div class="modal__close">
+              <svg
+                class="modal__cross"
+                width="18px"
+                height="18px"
+                data-modal-close
+              >
                 <use href="./icons/symboldefs.svg#icon-cross"></use>
               </svg>
             </div>
-              <form action="" class="form">
-                <label for="" class="form__label"> Ім'я
-                  <input type="text" class="form__input">
-                  <svg class="form__icon" width="18px" height="18px">
-                    <use href="./icons/symboldefs.svg#icon-person"></use>
-                  </svg>
-                </label>
-                <label for="" class="form__label"> Телефон
-                  <input type="tel" class="form__input">
-                  <svg class="form__icon" width="18px" height="18px">
-                    <use href="./icons/symboldefs.svg#icon-phone"></use>
-                  </svg>
-                </label>
-                <label for="" class="form__label"> Пошта
-                  <input type="email" class="form__input">
-                  <svg class="form__icon" width="18px" height="18px">
-                    <use href="./icons/symboldefs.svg#icon-email"></use>
-                  </svg>
-                </label>
-                <label for="" class="form__label"> Коментар
-                  <textarea name="" id="" placeholder="Введіть текст" class="form__comment"></textarea>
-                </label>
-                <div class="access">
+            <form action="" class="form">
+              <label for="" class="form__label">
+                Ім'я
+                <input type="text" class="form__input" />
+                <svg class="form__icon" width="18px" height="18px">
+                  <use href="./icons/symboldefs.svg#icon-person"></use>
+                </svg>
+              </label>
+              <label for="" class="form__label">
+                Телефон
+                <input type="tel" class="form__input" />
+                <svg class="form__icon" width="18px" height="18px">
+                  <use href="./icons/symboldefs.svg#icon-phone"></use>
+                </svg>
+              </label>
+              <label for="" class="form__label">
+                Пошта
+                <input type="email" class="form__input" />
+                <svg class="form__icon" width="18px" height="18px">
+                  <use href="./icons/symboldefs.svg#icon-email"></use>
+                </svg>
+              </label>
+              <label for="" class="form__label">
+                Коментар
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Введіть текст"
+                  class="form__comment"
+                ></textarea>
+              </label>
+              <div class="access">
                 <label for="" class="access__label">
-                  <input type="checkbox" width="16px" height="15px" class="access__checkbox" >
+                  <input
+                    type="checkbox"
+                    width="16px"
+                    height="15px"
+                    class="access__checkbox"
+                  />
                 </label>
-                <span class="access__text">Погоджуюся з розсилкою та приймаю</span>
+                <span class="access__text"
+                  >Погоджуюся з розсилкою та приймаю</span
+                >
                 <a href="#" class="access__link">Умови договору</a>
               </div>
-              </form>
-              <button type="button" data-modal-close class="button-send">Відправити</button>
-            </div>
+            </form>
+            <button type="button" data-modal-close class="button-send">
+              Відправити
+            </button>
           </div>
+        </div>
       </section>
       <section class="skills">
         <div class="container">
@@ -413,12 +440,16 @@
                 <p class="address__oficce">м. Київ, пр-т Лесі Українки, 26</p>
               </li>
               <li class="address__item">
-                <a href="mailto:example.email@email.com" class="address__contact"
+                <a
+                  href="mailto:example.email@email.com"
+                  class="address__contact"
                   >example.email@email.com</a
                 >
               </li>
               <li class="address__item">
-                <a href="tel:+380961111111" class="address__contact">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="address__contact"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -457,21 +488,42 @@
           </ul>
         </div>
         <div class="subscribe">
-            <h3 class="subscribe__title">Підпишіться на розсилку</h3>
-            <div class="subscribe__position">
-              <label for="" class="subscribe__label">
-                <input type="email" placeholder="E-mail" class="subscribe__input">
-               </label>
-               <button type="button" class="subscribe__button">
-                  Підписатися
-               </button>
-               <svg class="icon-send" width="24" height="24">
-                <use href="./icons/symboldefs.svg#icon-send"></use>
-              </svg>
-            </div>          
+          <h3 class="subscribe__title">Підпишіться на розсилку</h3>
+          <div class="subscribe__position">
+            <label for="" class="subscribe__label">
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="subscribe__input"
+              />
+            </label>
+            <button type="button" class="subscribe__button">Підписатися</button>
+            <svg class="icon-send" width="24" height="24">
+              <use href="./icons/symboldefs.svg#icon-send"></use>
+            </svg>
+          </div>
         </div>
       </div>
     </footer>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu__cross">
+          <use href="./icons/symboldefs.svg#icon-cross"></use>
+        </svg>
+      </button>
+       <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+            <a href="/" class="mobile-menu__link">A</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="/" class="mobile-menu__link">B</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="/" class="mobile-menu__link">C</a>
+        </li>
+       </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
