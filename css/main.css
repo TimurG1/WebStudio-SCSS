@@ -654,18 +654,24 @@ header {
   transform: translateX(0);
 }
 
+.cross-position {
+  position: relative;
+}
+
 .menu__cross {
   width: 19px;
   height: 19px;
   position: absolute;
   background-color: #fff;
   border: 0;
-  top: 10;
-  right: 10;
+  top: -27px;
+  right: 5px;
 }
 
 .icon__cross {
   position: absolute;
+  width: 35px;
+  height: 35px;
 }
 
 .mobile-menu {
@@ -1108,19 +1114,32 @@ footer {
 
 .filter {
   display: flex;
-  justify-content: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 34px;
+  }
 }
 .filter__button {
   font-weight: 500;
-  font-size: 16px;
   line-height: 162%;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-  margin-top: 60px;
-  margin-bottom: 34px;
   padding: 6px 25px;
   border: 1px;
   background-color: #f5f4fa;
@@ -1155,11 +1174,13 @@ footer {
 @media screen and (min-width: 768px) {
   .card__item {
     flex-basis: calc((100% - 30px) / 2);
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .card__item {
     flex-basis: calc((100% - 60px) / 3);
+    width: 370px;
   }
 }
 .card__item:hover {
