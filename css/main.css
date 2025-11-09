@@ -212,7 +212,7 @@ header {
 }
 
 .header__burger {
-  margin-left: 276px;
+  margin-left: 267px;
 }
 @media screen and (min-width: 768px) {
   .header__burger {
@@ -222,10 +222,36 @@ header {
 
 @media screen and (min-width: 480px) {
   .effecity {
-    background-image: url(../images/overlay.png), url(../images/mobileheader.jpg);
-    padding: 130px 0;
+    background-image: url(../images/overlay.png), url(../images/mobile/hero@mobile1x.png);
+    padding: 120px 0;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .effecity {
+    background-image: url(../images/overlay.png), url("../images/mobile/hero@mobile2x.png");
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .effecity {
+    background-image: url(../images/overlay.png), url(../images/tablet/hero@tablet1x.png);
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-width: 768px) and (min-resolution: 2dppx) {
+  .effecity {
+    background-image: url(../images/overlay.png), url("../images/tablet/hero@tablet2x.png");
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 1200px) {
+  .effecity {
+    background-image: url(../images/overlay.png), url(../images/desktop/hero@desktop1x.png);
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .effecity {
+    background-image: url(../images/overlay.png), url("../images/desktop/hero@desktop2x.png");
   }
 }
 .effecity__position {
@@ -257,12 +283,6 @@ header {
   color: #fff;
 }
 @media screen and (min-width: 768px) {
-  .effecity {
-    background-image: url(../images/heros.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
   .effecity__title {
     padding: 0 180px;
   }
@@ -305,124 +325,30 @@ header {
 @media screen and (min-width: 1200px) {
   .special {
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: normal;
   }
 }
-.special__item:nth-child(1):before {
-  content: "";
-  display: block;
+.special .icon-bc {
+  padding: 25px 190px;
+  background-color: #f5f4fa;
   margin-bottom: 30px;
-  width: 450px;
-  height: 120px;
-  background-image: url(../images/antena.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 @media screen and (min-width: 768px) {
-  .special__item:nth-child(1):before {
-    content: "";
-    display: block;
-    margin-bottom: 30px;
-    width: 354px;
-    height: 120px;
+  .special .icon-bc {
+    padding: 25px 142px;
   }
-}
-@media screen and (min-width: 1200px) {
-  .special__item:nth-child(1):before {
-    content: "";
-    display: block;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-  }
-}
-.special__item:nth-child(2):before {
-  content: "";
-  display: block;
-  margin-bottom: 30px;
-  width: 450px;
-  height: 120px;
-  background-image: url(../images/clock.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 @media screen and (min-width: 768px) {
-  .special__item:nth-child(2):before {
-    content: "";
-    display: block;
-    margin-bottom: 30px;
-    width: 354px;
-    height: 120px;
+  .special .icon-bc {
+    padding: 25px 100px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .special__item:nth-child(2):before {
-    content: "";
-    display: block;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-  }
-}
-.special__item:nth-child(3):before {
-  content: "";
+.special-icon {
   display: block;
-  margin-bottom: 30px;
-  width: 450px;
-  height: 120px;
-  background-image: url(../images/graph.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-@media screen and (min-width: 768px) {
-  .special__item:nth-child(3):before {
-    content: "";
-    display: block;
-    margin-bottom: 30px;
-    width: 354px;
-    height: 120px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .special__item:nth-child(3):before {
-    content: "";
-    display: block;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-  }
-}
-.special__item:nth-child(4):before {
-  content: "";
-  display: block;
-  margin-bottom: 30px;
-  width: 450px;
-  height: 120px;
-  background-image: url(../images/astronaut.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-@media screen and (min-width: 768px) {
-  .special__item:nth-child(4):before {
-    content: "";
-    display: block;
-    margin-bottom: 30px;
-    width: 354px;
-    height: 120px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .special__item:nth-child(4):before {
-    content: "";
-    display: block;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-  }
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .special__quality {
   font-family: var(--font-family);
@@ -485,7 +411,7 @@ header {
 .team {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 .team__title {
   font-size: 36px;
@@ -495,7 +421,7 @@ header {
 }
 
 .developers__item {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   margin-bottom: 30px;
 }
@@ -558,11 +484,11 @@ header {
   transition-property: backgrond-color;
 }
 .social__item:hover {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 .social__icon {
   padding: 12px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   width: 44px;
   height: 44px;
   transition-property: fill;
@@ -600,8 +526,8 @@ header {
 .custumers__icon {
   width: 210px;
   height: 92px;
-  fill: #AFB1B8;
-  border: 1px solid #AFB1B8;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 2px;
   transition-property: fill, border;
 }
@@ -665,7 +591,7 @@ header {
   background-color: #fff;
   border: 0;
   top: -27px;
-  right: 5px;
+  right: 15px;
 }
 
 .icon__cross {
