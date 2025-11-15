@@ -24,23 +24,24 @@
       background-image: url(../images/overlay.png),
         url(../images/tablet/hero@tablet1x.png);
 
-            @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/overlay.png),
-        url("../images/tablet/hero@tablet2x.png");
-    }
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/overlay.png),
+          url("../images/tablet/hero@tablet2x.png");
+      }
     }
     @media screen and (min-width: 1200px) {
+      padding: 200px 0;
       background-image: url(../images/overlay.png),
         url(../images/desktop/hero@desktop1x.png);
 
-            @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/overlay.png),
-        url("../images/desktop/hero@desktop2x.png");
-    }
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/overlay.png),
+          url("../images/desktop/hero@desktop2x.png");
+      }
     }
   }
 
@@ -75,7 +76,6 @@
   }
 
   @media screen and (min-width: 768px) {
-
     &__title {
       padding: 0 180px;
     }
